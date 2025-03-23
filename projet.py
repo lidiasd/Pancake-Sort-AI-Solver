@@ -100,7 +100,7 @@ class PancakeProblem:
 
 if __name__ == "__main__":
     root = tk.Tk()
-    root.title("Pancake Sorting 🍽️")
+    root.title("Pancake Sorting")
 
     instance = (4, 6, 2, 5, 1, 3)  # Example initial state
     problem = PancakeProblem(instance)
@@ -118,16 +118,4 @@ if __name__ == "__main__":
 
     root.mainloop()
 
-# Test instances
-instances = [
-    (4, 6, 2, 5, 1, 3),
-    (1, 3, 7, 5, 2, 6, 4),
-    (1, 7, 2, 6, 3, 5, 4),
-    (1, 3, 5, 7, 9, 2, 4, 6, 8)
-]
-
-for i, instance in enumerate(instances, start=1):
-    problem = PancakeProblem(instance)
-    print(f"A* Solution for c{i}: {problem.astar_with_steps()}")
-    print(f"UCS Solution for c{i}: {problem.uniform_cost_search_with_steps()}")
-    print(f"Greedy Solution for c{i}: {problem.greedy_best_first_with_steps()}")
+ 
